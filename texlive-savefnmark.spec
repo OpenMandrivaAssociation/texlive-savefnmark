@@ -50,6 +50,7 @@ another footnote at the bottom.
 %doc %{_texmfdistdir}/source/latex/savefnmark/savefnmark.drv
 %doc %{_texmfdistdir}/source/latex/savefnmark/savefnmark.dtx
 %doc %{_texmfdistdir}/source/latex/savefnmark/savefnmark.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +61,5 @@ another footnote at the bottom.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
