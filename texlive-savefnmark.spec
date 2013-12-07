@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-savefnmark
 Version:	1.0
-Release:	5
+Release:	6
 Summary:	Save name of the footnote mark for reuse
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/savefnmark
